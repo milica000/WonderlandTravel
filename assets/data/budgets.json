@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "Budget", "value": "budget" },
+    { "id": 2, "name": "Mid-Range", "value": "mid-range" },
+    { "id": 3, "name": "Luxury", "value": "luxury" }
+]

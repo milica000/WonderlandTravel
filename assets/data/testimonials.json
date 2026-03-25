@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "Ana Jovanović",
+        "destination": "Santorini",
+        "text": "Neverovatno iskustvo. Odličan romantični odmor koji smo tražili i za kojim smo žudili. Nikakvih problema nismo imali. Na koju god sitnicu da bi se požalili njihov tim bi to rešio za tren oka!",
+        "rating": 5,
+        "date": "2024-06-15"
+    },
+    {
+        "id": 2,
+        "name": "Marko Tomić",
+        "destination": "Madagascar",
+        "text": "Savršena agencija za ovo putovanje. Nismo mogli supruga i ja da prestanemo da se oduševljavamo njihovim timom i neverovatnim iskustvima koje su nam pružali. Sve bilo isplanirano savršeno do poslednjeg detalja. Sve preporuke!",
+        "rating": 5,
+        "date": "2023-05-25"
+    },
+    {
+        "id": 3,
+        "name": "Anđela Savić",
+        "destination": "Rio De Janeiro",
+        "text": "Drugarice i ja smo slučajno našle ovu agenciju, bile smo prvo skeptične sve je delovalo toliko savršeno da nismo mislile da može biti realnost, ali jeste. Imale smo putovanje i provod naših života. Planiramo sa njima da proputujemo sve destinacije koje pružaju u budućnosti!",
+        "rating": 5,
+        "date": "2024-07-01"
+    },
+    {
+        "id": 4,
+        "name": "Saša Anđelić",
+        "destination": "Tokyo",
+        "text": "Putovanje sa decom i porodicom nikada nije lako, ali ovaj put jeste bilo! Njihov tim će se uvek maksimalno posvetiti u svakom momentu, osećali smo se toliko posebno tokom našeg ostanka da smo već yakayali sledeće putovanje po povratku.",
+        "rating": 5,
+        "date": "2025-12-11"
+    }
+]

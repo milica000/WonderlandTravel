@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Home", "href": "index.html" },
+    { "id": 2, "name": "Destinations", "href": "destinations.html" },
+    { "id": 3, "name": "Plan Trip", "href": "planTrip.html" },
+    { "id": 4, "name": "Favorites", "href": "favorites.html" },
+    { "id": 5, "name": "Author", "href": "author.html" },
+    { "id": 6, "name": "Documentation", "href": "PROJEKTNIZADATAK.pdf", "download" : "PROJEKTNIZADATAK.pdf"}
+]

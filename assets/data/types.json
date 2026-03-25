@@ -1,0 +1,6 @@
+[
+    { "id": 1, "name": "Beach", "value": "beach" },
+    { "id": 2, "name": "City", "value": "city" },
+    { "id": 3, "name": "Nature", "value": "nature" },
+    { "id": 4, "name": "Culture", "value": "culture" }
+]

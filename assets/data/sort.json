@@ -1,0 +1,8 @@
+[
+    { "id": 1, "sortValue": "name-asc", "sortName": "Name A-Z" },
+    { "id": 2, "sortValue": "name-desc", "sortName": "Name Z-A" },
+    { "id": 3, "sortValue": "price-asc", "sortName": "Price Low-High" },
+    { "id": 4, "sortValue": "price-desc", "sortName": "Price High-Low" },
+    { "id": 5, "sortValue": "rating-desc", "sortName": "Best Rated" },
+    { "id": 6, "sortValue": "popularity-desc", "sortName": "Most Popular" }
+]

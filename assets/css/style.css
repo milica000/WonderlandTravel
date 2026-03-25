@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fdf6ec;
+    color: #3d2b1f;
+}
+main{
+    flex: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fdf6ec;
+    margin-bottom: 2%;
+    box-shadow: 5px 5px 5px #0000002d;
+}
+.current{
+    color: #f6ad55;
+}
+nav .logo a{
+    font-size: 30pt;
+    font-weight: 900;
+    font-style: italic;
+    color: #3d2b1f;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    color: #3d2b1f;
+    font-weight: 300;
+    padding: 5px;
+}
+nav a:hover{
+    color: #f6ad55;
+    transition: 1s;
+}
+#hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
+                url("../img/hero.jpg") no-repeat center center / cover;
+    /*background-position: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.HeroContent h6 {
+    color: #f6ad55;
+    letter-spacing: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.HeroContent h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.HeroContent p {
+    color: #ffffffcc;
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+}
+
+.BtnExplore {
+    background-color: #f6ad55;
+    color: #3d2b1f;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+#FeaturedDestination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 95%;
+    align-items: stretch;
+}
+.DestinationCard{
+    background-color: #fff8f0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 25%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.159);
+    margin: 1%;
+}
+.DestinationCard img{
+    width: 100%;
+}
+.DestinationCard h6{
+    font-weight: 900;
+    font-size: 18pt;
+}
+.DestinationCard p span{
+    font-weight: 700;
+}
+#FeaturedDestination h6{
+    text-align: center;
+    letter-spacing: 1;
+    color: #3d2b1f;
+    text-align: left;
+}
+#filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#filters select{
+    margin: 1%;
+    border: 2px solid #f6ad55;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.BtnPage {
+    width: 50px;
+    border: 2px solid #3d2b1f;
+    background: none;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #3d2b1f;
+    margin: 15px;
+    padding: 10px;
+}
+
+.BtnPage.active {
+    background-color: #3d2b1f;
+    color: white;
+}
+
+/*FOOTER!!!!!*/
+#footer {
+    background-color: #3d2b1f;
+    color: #fdf6ec;
+    padding: 50px 60px 20px 60px;
+    margin-top: 60px;
+}
+
+.FooterContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c8a97e;
+}
+
+.FooterLogo a {
+    font-size: 24pt;
+    font-weight: 900;
+    font-style: italic;
+    color: #f6ad55;
+    text-decoration: none;
+}
+
+.FooterLogo p {
+    color: #fdf6ec;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.FooterLinks h6,
+.FooterInfo h6 {
+    color: #f6ad55;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.FooterLinks ul {
+    list-style: none;
+}
+
+.FooterLinks ul li {
+    margin-bottom: 8px;
+}
+
+.FooterLinks ul li a {
+    color: #fdf6ec;
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
+
+.FooterLinks ul li a:hover {
+    color: #f6ad55;
+    opacity: 1;
+}
+
+.FooterInfo p {
+    color: #fdf6ec;
+    opacity: 0.8;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.FooterBottom {
+    text-align: center;
+    padding-top: 20px;
+    color: #fdf6ec;
+    opacity: 0.6;
+    font-size: 0.85rem;
+}
+.FieldError {
+    color: red;
+    font-size: 10pt;
+    display: block;
+    margin-top: 4px;
+}
+#BookingForm {
+    display: flex;
+    justify-content: center;
+    background: url("../img/serengeti.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#FormContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf6ec66;
+    padding: 1%;
+    width: 40%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.233);
+    margin: 1%;
+    border-radius: 3px;
+}
+#FormContainer h1{
+    font-size: 29pt;
+    font-weight: 900;
+    color: #3d2b1f;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#PersonalDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+}
+#TripDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 70%;
+}
+#form input{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #3d2b1f;
+    color: #3d2b1f;
+    width: 100%;
+    background-color: #3d2b1f;
+    color: #fff8f0;
+}
+#form select{
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #3d2b1f;
+    color: #fdf6eca8;
+    width: 100%;
+    background-color: #3d2b1f;
+}
+#TripDetails label span{
+    font-size: 9pt;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+#TripDetails label{
+    font-weight: 800;
+    font-size: 15pt;
+}
+#Accommmodation{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    color: #3d2b1f;
+    justify-content: center;
+    padding: 3px;
+    border-radius: 3px;
+}
+#TextAreaNote{
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+    background-color: #3d2b1f;
+    color: #fdf6ec;
+    border: 0px;
+    box-shadow: 5px 5px 5px #0000002f;
+}
+#TextAreaNote:focus{
+    background-color:#fdf6ec;
+    color: #3d2b1f;
+    border: 2px solid #3d2b1f;
+}
+#btnBook{
+    padding: 10px;
+    font-size: 15pt;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #3d2b1f;
+    font-family: 'Raleway', sans-serif;
+    border: 5px solid #3d2b1f;
+    font-weight: 900;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.203);
+
+}
+/*input[type="radio"]{
+
+
+    border: 2px solid #3d2b1f;
+    background-color: #3d2b1f;
+}*/
+#searchBlock {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#tbSearch {
+    width: 30%;
+    padding: 8px 15px;
+    border: 2px solid #f6ad55;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #3d2b1f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10pt;
+    outline: none;
+}
+
+#tbSearch::placeholder {
+    color: #3d2b1f99;
+}
+
+#tbSearch:focus {
+    border-color: #3d2b1f;
+    transition: 0.3s;
+}
+#FavoritesRegion{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.BtnFavorite{
+    cursor: pointer;
+}
+.NoResults{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25pt;
+    font-weight: 900;
+    font-style: italic;
+    padding: 4%;
+    background-position: center;
+    border-radius: 4px;
+}
+.NoResults button{
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+    background-color: #3d2b1f;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.244);
+    margin-top: 3%;
+    font-size: 11pt;
+}
+.NoResults button a{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #fdf6ec;
+
+}
+#FavoriteRegion{
+    display: flex;
+    cursor: pointer;
+}
+.BtnPage{
+    cursor: pointer;
+}
+.FavoriteAdded {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    z-index: 9999;
+}
+
+.FavoriteAdded.success {
+    background-color: #c8a97e;
+    color: #3d2b1f;
+}
+
+.FavoriteAdded.error {
+    background-color: #e53e3e;
+    color: white;
+}
+.FavDest{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    font-size: 35pt;
+}
+.BtnFavorite{
+    margin-top: 2px;
+    border: none;
+    background-color: transparent;
+    color:#e53e3e;
+    font-size: 12pt;
+}
+.BtnRemoveFavorite{
+    margin-top: 2px;
+    border: none;
+    background-color: transparent;
+    color:#e53e3e;
+    font-size: 12pt;
+
+}
+#author{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/marrakech.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.AboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d2b1fb6;
+    padding: 20px;
+    color: #fdf6ec;
+}
+.AboutMe img{
+    width: 30%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin-top: 1%;
+    width: 30%;
+    background-color: #3d2b1f;
+    padding: 5px;
+    border-radius: 5px;
+}
+#text h6{
+    font-size: 20pt;
+    padding: 5px;
+}
+#text p{
+    padding: 3px;
+    font-weight: 300;
+    font-size: 14pt;
+    text-align: left;
+}
+#text span{
+    font-weight: 700;
+}
+.BtnDetails{
+    text-align: center;
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #f6ad55;
+    font-weight: 700;
+}
+
+section #DestinationDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.DetailHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.DetailHero img {
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+.DetailHeroText {
+    width: 100%;
+}
+.DetailCard span{
+    font-weight: 800;
+    font-size: 15pt;
+}
+.DetailBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 40px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center; 
+}
+.BtnExplore a{
+    margin-top: 5%;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #hero {
+        height: 50vh;
+    }
+
+    .HeroContent h1 {
+        font-size: 1.8rem;
+    }
+
+    .HeroContent p {
+        font-size: 0.9rem;
+    }
+
+    .DestinationCard {
+        width: 90%;
+    }
+
+    #filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filters select {
+        width: 80%;
+    }
+
+    #FormContainer {
+        width: 90%;
+    }
+     #tbSearch {
+        width: 80%;
+    }
+
+    #PersonalDetails,
+    #TripDetails {
+        width: 90%;
+    }
+
+    #TextAreaNote {
+        width: 80%;
+    }
+
+    .FooterContent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer {
+        padding: 30px 20px;
+    }
+
+    .AboutMe img {
+        width: 60%;
+    }
+
+    #text {
+        width: 80%;
+    }
+
+    .NoResults {
+        font-size: 16pt;
+    }
+
+    .NoResults button {
+        width: 60%;
+    }
+    .FavDest{
+        font-size: 21pt;
+    }
+}
+
+/* MALI MOBILNI - do 480px */
+@media (max-width: 480px) {
+    nav .logo a {
+        font-size: 22pt;
+    }
+
+    .HeroContent h1 {
+        font-size: 1.4rem;
+    }
+
+    .DestinationCard {
+        width: 95%;
+    }
+
+    #FormContainer {
+        width: 95%;
+        margin: 5px;
+    }
+
+    .BtnExplore {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    #pagination {
+        flex-wrap: wrap;
+    }
+
+    .BtnPage {
+        margin: 5px;
+        width: 40px;
+        padding: 8px;
+    }
+}

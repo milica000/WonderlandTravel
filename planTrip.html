@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Your best travel booking agency. Here you can find destinations that you can only dream of. Our team is prepared to give you best traveling memories. You can book directly on this site without ever leaving the house!">
+        <meta name="keywords" content="Travel, Exotic destination, Island vacation, Vacation, ">
+        <meta name="author" content="...">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="assets/css/style.css" type="stylesheet/css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+        
+        <title>Wonderland | Discover Your Next Adventure</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body data-page="planTrip">
+    <header id="header">
+        <nav>
+            <div class="logo"><a href="index.html">Wonderland</a></div>
+            <ul id="navMenu"></ul>
+        </nav>
+    </header>
+    <main>
+        <section id="BookingForm">
+            <div id="FormContainer">
+                <h1>Plan Your Trip</h1>
+                <h6>Fill in details and we'll take care of the rest</h6>
+                <form id="form">
+                    <div id="PersonalDetails">
+                        <input type="text" id="tbName" placeholder="Full Name"/>
+                        <span class="FieldError" id="NameError"></span>
+
+                        <input type="email" id="tbEmail" placeholder="Email"/>
+                        <span class="FieldError" id="EmailError"></span>
+
+                        <input type="tel" id="tbPhone" placeholder="Phone Number"/>
+                        <span class="FieldError" id="PhoneError"></span>
+
+                    </div><br>
+                    <div id="TripDetails">
+                        <label for="dllDestination">Chosen destination</label>
+                        <select id="ddlDestination"></select><br><br>
+                        <label for="DateDeparture">Choose Date of Departure</label>
+                        <input type="date" id="DateDeparture"><br><br>
+                        <label for="DateReturn">Choose Date of return</label>
+                        <input type="date" id="DateReturn"><br><br>
+                        <label for="NumberOfPeople">Choose number of people traveling. <br><span>Minimum is 1 person, maximum 20</span></label>
+                        <input type="number" id="NumberOfPeople" min = "1" max="20"/>
+                    </div> <br>
+                    <div class="radio">
+                    <div id="Accommmodation">
+                        <input type="radio" name="Accommmodation" value="hotel"/> Hotel 
+                        <input type="radio" name="Accommmodation" value="hostel"/> Hostel
+                        <input type="radio" name="Accommmodation" value="resort"/> Resort
+                    </div>
+                    <div id="Accommmodation">
+                        <input type="checkbox" value="transfer"/> Airport Transfer
+                        <input type="checkbox" value="insurance"/> Travel Insurance
+                        <input type="checkbox" value="tour"/> Guided Tour
+                    </div></div>
+                    <textarea id="TextAreaNote" placeholder="Additional notes..."></textarea><br>
+                    <button type="button" id="btnBook">Book Now</button>
+                </form>
+                <div id="FormMessage"></div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer id="footer"></footer>
+    <script src="assets/js/main.js"></script>
+    </body>
+</html>
+
