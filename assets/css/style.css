@@ -651,6 +651,10 @@ section #DestinationDetail {
     .FavDest{
         font-size: 21pt;
     }
+    .radio{
+        display: none;
+    }
+    
 }
 
 /* MALI MOBILNI - do 480px */
