@@ -174,10 +174,10 @@ function renderFooter(){
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="plan-trip.html">Plan Trip</a></li>
+                    <li><a href="planTrip.html">Plan Trip</a></li>
                     <li><a href="favorites.html">Favorites</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="documentation.html" download>Documentation</a></li>
                 </ul>
             </div>
             <div class="FooterInfo">
